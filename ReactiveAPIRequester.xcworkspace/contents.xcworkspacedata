@@ -4,4 +4,7 @@
    <FileRef
       location = "group:ReactiveAPIRequester/ReactiveAPIRequester.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ReactiveAPIRequester/../Carthage/Checkouts/ReactiveSwift/ReactiveSwift.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -13,7 +13,24 @@
 		619323C823C9C61D000EF52B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619323C723C9C61D000EF52B /* Assets.xcassets */; };
 		619323CB23C9C61D000EF52B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619323CA23C9C61D000EF52B /* Preview Assets.xcassets */; };
 		619323CE23C9C61D000EF52B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619323CC23C9C61D000EF52B /* LaunchScreen.storyboard */; };
+		6193274623C9C825000EF52B /* APIRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193274523C9C825000EF52B /* APIRequester.swift */; };
+		61932E8A23C9CF90000EF52B /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61932E8923C9CF90000EF52B /* ReactiveSwift.framework */; };
+		61932E8B23C9CF90000EF52B /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61932E8923C9CF90000EF52B /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61932E6A23C9CDBD000EF52B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				61932E8B23C9CF90000EF52B /* ReactiveSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		619323BE23C9C61C000EF52B /* ReactiveAPIRequester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveAPIRequester.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,11 +41,9 @@
 		619323CA23C9C61D000EF52B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		619323CD23C9C61D000EF52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		619323CF23C9C61D000EF52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		619323D623C9C691000EF52B /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = ../Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
-		6193274023C9C75B000EF52B /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = "<group>"; };
-		6193274123C9C75B000EF52B /* 31403D53-2BCB-30A3-BF57-985740206292.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "31403D53-2BCB-30A3-BF57-985740206292.bcsymbolmap"; sourceTree = "<group>"; };
-		6193274223C9C75B000EF52B /* DA54604A-08ED-3B4A-BD84-7E331BF322D0.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DA54604A-08ED-3B4A-BD84-7E331BF322D0.bcsymbolmap"; sourceTree = "<group>"; };
-		6193274323C9C75B000EF52B /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		6193274523C9C825000EF52B /* APIRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequester.swift; sourceTree = "<group>"; };
+		61932E6D23C9CE69000EF52B /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = ../Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		61932E8923C9CF90000EF52B /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61932E8A23C9CF90000EF52B /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,9 +61,10 @@
 		619323B523C9C61C000EF52B = {
 			isa = PBXGroup;
 			children = (
+				61932E6D23C9CE69000EF52B /* ReactiveSwift.framework */,
 				619323C023C9C61C000EF52B /* ReactiveAPIRequester */,
 				619323BF23C9C61C000EF52B /* Products */,
-				619323D523C9C691000EF52B /* Frameworks */,
+				61932ACE23C9CC53000EF52B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +79,7 @@
 		619323C023C9C61C000EF52B /* ReactiveAPIRequester */ = {
 			isa = PBXGroup;
 			children = (
+				6193274423C9C7FE000EF52B /* Tools */,
 				619323C123C9C61C000EF52B /* AppDelegate.swift */,
 				619323C323C9C61C000EF52B /* SceneDelegate.swift */,
 				619323C523C9C61C000EF52B /* ContentView.swift */,
@@ -81,25 +99,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		619323D523C9C691000EF52B /* Frameworks */ = {
+		6193274423C9C7FE000EF52B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				6193273F23C9C75B000EF52B /* iOS */,
-				619323D623C9C691000EF52B /* ReactiveSwift.framework */,
+				6193274523C9C825000EF52B /* APIRequester.swift */,
 			);
-			name = Frameworks;
+			path = Tools;
 			sourceTree = "<group>";
 		};
-		6193273F23C9C75B000EF52B /* iOS */ = {
+		61932ACE23C9CC53000EF52B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6193274023C9C75B000EF52B /* ReactiveSwift.framework */,
-				6193274123C9C75B000EF52B /* 31403D53-2BCB-30A3-BF57-985740206292.bcsymbolmap */,
-				6193274223C9C75B000EF52B /* DA54604A-08ED-3B4A-BD84-7E331BF322D0.bcsymbolmap */,
-				6193274323C9C75B000EF52B /* ReactiveSwift.framework.dSYM */,
+				61932E8923C9CF90000EF52B /* ReactiveSwift.framework */,
 			);
-			name = iOS;
-			path = ../Carthage/Build/iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 				619323BA23C9C61C000EF52B /* Sources */,
 				619323BB23C9C61C000EF52B /* Frameworks */,
 				619323BC23C9C61C000EF52B /* Resources */,
+				61932E6A23C9CDBD000EF52B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +190,7 @@
 				619323C223C9C61C000EF52B /* AppDelegate.swift in Sources */,
 				619323C423C9C61C000EF52B /* SceneDelegate.swift in Sources */,
 				619323C623C9C61C000EF52B /* ContentView.swift in Sources */,
+				6193274623C9C825000EF52B /* APIRequester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
